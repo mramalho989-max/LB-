@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LB Tour </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module" src="Untitled-1.js"></script>
+    <header class="header">
+    <div class="container header__container">
+        <div class="header__logo">
+            <img src="./images/logo.png" alt="LB Tour" class="logo-img">
+            <span class="header__brand-name">LB Tour</span>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="nav-list">
+                <li><a href="#resorts" class="nav-link">Resorts</a></li>
+                <li><a href="#parks" class="nav-link">Parques</a></li>
+                <li><a href="#packages" class="nav-link">Pacotes</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+                <li><a href="#about" class="nav-link">Sobre Nós</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__actions">
+            <div class="header__phone">
+                <img src="./images/phoneicon.svg" alt="Phone" class="icon-phone">
+                <span class="phone-number">(17) 3281-1500</span>
+            </div>
+            <a href="#booking" class="btn btn--reserve">Reserve agora</a>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__slider">
+                <div class="hero__slide active">
+                    <div class="container hero__container">
+                        <div class="hero__content">
+                            <img src="./images/resort.jpg" alt="Imagem de Resorts em Olímpia" class="hero__image">
+                            <h1 class="hero__title">Resorts Exclusivos em Olímpia</h1>
+                            <p class="hero__subtitle">Sua melhor escolha em conveniência, conforto e diversão.</p>
+                            <a href="#resorts" class="btn btn--cta">Conheça os Resorts</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__slide">
+                    <div class="container hero__container">
+                        <div class="hero__content">
+                             <img src="./images/resort.jpg" alt="Imagem de Resorts em Olímpia" class="hero__image">
+                            <h1 class="hero__title">Mergulhe na Diversão</h1>
+                            <p class="hero__subtitle">Os melhores parques aquáticos da América Latina esperam por você.</p>
+                            <a href="#parks" class="btn btn--cta">Conheça os Parques</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__slide">
+                    <div class="container hero__container">
+                        <div class="hero__content">
+                             <img src="./images/resort.jpg" alt="Imagem de Resorts em Olímpia" class="hero__image">
+                            <h1 class="hero__title">Pacotes para Toda a Família</h1>
+                            <p class="hero__subtitle">Cuidamos de cada detalhe para que sua única preocupação seja relaxar.</p>
+                            <a href="#packages" class="btn btn--cta">Ver Pacotes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking-card" class="booking">
+            <div class="container booking__container">
+                <form class="booking-card" id="booking-form">
+                    <div class="booking__header">
+                        <h3>Solicite seu orçamento</h3>
+                        <p>Personalize sua viagem para Olímpia com as melhores condições.</p>
+                    </div>
+                    <div class="booking-card__fields-wrapper">
+                        <div class="booking-field" data-field-type="date-picker">
+                                <path d="M8 2V5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M16 2V5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3.5 9.09H20.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="booking-field__text">
+                                <label for="checkin">CHECK-IN</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+                        </div>
+                        <div class="booking-field" data-field-type="date-picker">
+                                <path d="M8 2V5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M16 2V5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3.5 9.09H20.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="booking-field__text">
+                                <label for="checkout">CHECK-OUT</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                        </div>
+                        <label class="booking-field" for="adults">
+                            <svg class="booking-field__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path> <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                            </svg>
+                            <div class="booking-field__text">
+                                <span>ADULTOS</span>
+                                <select id="adults" name="adults">
+                                    <option value="1">1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+                        </label>
+                        <div class="booking-field">
+                        <div class="booking-field__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <div class="booking-field__text">
+                            <label for="children-qty">CRIANÇAS</label>
+                            <select id="children-qty" name="children_qty">
+                                <option value="0">Nenhuma</option>
+                                <option value="1">1 Criança</option>
+                                <option value="2">2 Crianças</option>
+                                <option value="3">3 Crianças</option>
+                                <option value="4">4 Crianças</option>
+                                <option value="5">5 Crianças</option>
+                                <option value="6">6 Crianças</option>
+                                <option value="7">7 Crianças</option>
+                                <option value="8">8 Crianças</option>
+                            </select>
+                        </div>
+                    </div>
+
+                        <div id="ages-wrapper" style="display: none; margin-top: 20px;">
+                        <h4 style="font-size: 14px; color: #555; margin-bottom: 10px; font-weight: 600;">
+                            Idades das Crianças
+                        </h4>
+                        <div id="children-grid" class="children-grid">
+                            </div>
+                    </div>
+                    </div>
+                        <button type="submit" class="btn btn--book-now">Solicitar Orçamento</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="category-grid">
+            <div class="container">
+                <div class="category-grid__wrapper">
+                    <!-- Card 1: Parques -->
+                    <a href="#parks" class="category-card">
+                        <img src="./images/hot-beach-parque.webp" alt="Parques Aquáticos" class="category-card__bg">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Parques</h3>
+                            <p class="category-card__subtitle">Diversão garantida para toda a família.</p>
+                            <span class="btn btn--explore">Explorar →</span>
+                        </div>
+                    </a>
+                    <!-- Card 2: Resorts -->
+                    <a href="#resorts" class="category-card">
+                        <img src="./images/hot-beach-destaque.webp" alt="Resorts de Luxo" class="category-card__bg">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Resorts</h3>
+                            <p class="category-card__subtitle">Conforto e lazer no mesmo lugar.</p>
+                            <span class="btn btn--explore">Explorar →</span>
+                        </div>
+                    </a>
+                    <!-- Card 3: Pacotes -->
+                    <a href="#packages" class="category-card">
+                        <img src="./images/pacote-familia.jpeg" alt="Pacotes de Viagem" class="category-card__bg">
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Pacotes</h3>
+                            <p class="category-card__subtitle">Sua viagem completa, sem preocupações.</p>
+                            <span class="btn btn--explore">Explorar →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="resorts" class="resorts">
+            <div class="container resorts__container">
+                <div class="section-header">
+                    <h2>Nossos Resorts Parceiros</h2>
+                    <p>Conheça as melhores opções de hospedagem em Olímpia</p>
+                </div>
+                
+                <div class="resorts__wrapper">
+                    <div class="resorts__list">
+                        <!-- Card 1 -->
+                        <div class="resort-card">
+                            <div class="resort-card__header">
+                                <img src="./images/wyndham.webp" alt="Resort" class="resort-card__thumb">
+                                <div class="resort-card__info">
+                                    <h3>Wyndham Olímpia Royal Hotels</h3>
+                                    <div class="resort-card__meta">
+                                        <span><img src="./images/localicon.svg" alt="ícone de local"> Olímpia, SP</span>
+                                        <span class="resort-card__rating"><img src="./images/starIcon.svg" alt="ícone de estrela"> 4.9</span>
+                                    </div>
+                                    <div class="resort-card__tags">
+                                        <span class="tag">Wi-Fi Grátis</span>
+                                        <span class="tag">Piscina</span>
+                                        <span class="tag">Restaurante</span>
+                                    </div>
+                                </div>
+                                <button class="resort-card__toggle">
+                                    <img src="./images/arrowDownIcon.svg" alt="Expandir">
+                                </button>
+                            </div>
+                            <div class="resort-card__content">
+                                <p class="resort-card__description">Localizado ao lado do Thermas dos Laranjais, o Wyndham oferece acesso privativo ao parque aquático mais visitado da América Latina e um dos maiores do mundo, garantindo comodidade, exclusividade e mais tempo de lazer durante a sua viagem. Um resort ideal para quem busca férias em família com conforto, segurança, estrutura completa e uma experiência à altura de grandes destinos internacionais.<br>
+                                    Com uma estrutura excepcional, o resort conta com 11 piscinas aquecidas (incluindo piscinas cobertas), ofurôs, spas, saunas, academias completas, áreas infantis, brinquedotecas, cinema, salas de jogos, quadras esportivas e um amplo centro gastronômico, tudo pensado para que você aproveite cada momento sem sair do complexo.<br>
+                                    Wyndham Olímpia: onde descanso, lazer e excelência se encontram.</p>
+                                    <div class="resort-card__booking">
+                                    <span class="resort-card__price">A partir de <strong>R$ 450</strong>/noite</span>
+                                    <a href="#booking" class="btn btn--primary">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="resort-card">
+                            <div class="resort-card__header">
+                                <img src="./images/hot-beach-destaque.webp" alt="Resort" class="resort-card__thumb">
+                                <div class="resort-card__info">
+                                    <h3>Hot Beach Resort</h3>
+                                    <div class="resort-card__meta">
+                                        <span><img src="images/localIcon.svg" alt="ícone de local"> Olímpia, SP</span>
+                                        <span class="resort-card__rating"><img src="./images/starIcon.svg" alt="ícone de estrela"> 4.8</span>
+                                    </div>
+                                    <div class="resort-card__tags">
+                                        <span class="tag">Acesso ao Parque</span>
+                                        <span class="tag">All-Inclusive</span>
+                                    </div>
+                                </div>
+                                <button class="resort-card__toggle">
+                                    <img src="./images/arrowDownIcon.svg" alt="Expandir">
+                                </button>
+                            </div>
+                            <div class="resort-card__content">
+                                <p class="resort-card__description">Hot Beach Resort
+                                O Hot Beach Resort oferece hospedagem premium com acesso privilegiado ao Hot Beach Parque Olímpia, a poucos passos do seu apartamento. Aqui, cada detalhe foi pensado para quem valoriza praticidade, lazer e alto padrão.<br>
+                                Apartamentos elegantes, ambientes acolhedores e o descanso perfeito após um dia de diversão.<br>
+                                Piscinas de águas termais naturais, bares à beira da piscina, espaços kids e teen e uma estrutura completa para toda a família.<br>
+                                Piscinas com águas termais naturais, áreas kids e teen, bares à beira da piscina e programação infantil completam a experiência, garantindo lazer para todas as idades, sem precisar sair do hotel.<br>
+                                Integrado à charmosa Vila Guarani, o resort proporciona experiências gastronômicas e momentos especiais também à noite, sem sair do complexo.<br>
+                                Conforto, lazer e exclusividade no mesmo endereço.</p>
+                                <div class="resort-card__booking">
+                                    <span class="resort-card__price">A partir de <strong>R$ 550</strong>/noite</span>
+                                    <a href="#booking" class="btn btn--primary">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="resort-card">
+                            <div class="resort-card__header">
+                                <img src="./images/resort-enjoy.webp" alt="Resort" class="resort-card__thumb">
+                                <div class="resort-card__info">
+                                    <h3>Enjoy Solar das Águas</h3>
+                                    <div class="resort-card__meta">
+                                        <span><img src="./images/localIcon.svg" alt="ícone de local"> Olímpia, SP</span>
+                                        <span class="resort-card__rating"><img src="./images/starIcon.svg" alt="ícone de estrela"> 4.7</span>
+                                    </div>
+                                    <div class="resort-card__tags">
+                                        <span class="tag">Café da Manhã</span>
+                                        <span class="tag">Estacionamento</span>
+                                    </div>
+                                </div>
+                                <button class="resort-card__toggle">
+                                    <img src="./images/arrowDownIcon.svg" alt="Expandir" unoptimized>
+                                </button>
+                            </div>
+                            <div class="resort-card__content">
+                                <p class="resort-card__description">Enjoy Solar das Águas Park Resort
+                                    Excelente estrutura de lazer e custo-benefício.
+                                    O Enjoy Solar das Águas é perfeito para famílias que querem conforto e diversão em um só lugar.<br>
+                                    O resort conta com piscinas de águas quentes e frias, brinquedos aquáticos, jacuzzis, spa e uma estrutura completa para todas as idades,<br>
+                                    incluindo playground, brinquedoteca, cinema e espaço teen.<br>
+                                    Além disso, oferece quadras esportivas, atividades recreativas e ótimas opções de restaurantes e bares, com cardápio variado para agradar toda a família. Um resort moderno, acolhedor e completo para aproveitar Olímpia ao máximo.</p>
+                                    <div class="resort-card__booking">
+                                    <span class="resort-card__price">A partir de <strong>R$ 380</strong>/noite</span>
+                                    <a href="#booking" class="btn btn--primary">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resorts__featured">
+                        <img src="./images/resort-enjoy.webp" alt="Resort em destaque">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container testimonials__container">
+                <div class="section-header">
+                    <h2>O que nossos clientes dizem</h2>
+                    <p>Experiências reais de viajantes que confiaram em nós.</p>
+                </div>
+                <div class="testimonials__slider-wrapper">
+                    <div class="testimonials__slider">
+                        <div class="testimonials__track">
+                            <!-- Card 1 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-card__rating">
+                                    <img src="./images/starIcon.svg" alt="Ícone de estrela">
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-card__text">"Minha experiência com a LB Tour foi extremamente positiva. Desde o primeiro contato, a empresa demonstrou profissionalismo, organização e compromisso com o bem-estar dos clientes. O atendimento foi atencioso e claro, oferecendo todas as informações necessárias sobre o trajeto, horários, embarque e demais orientações.<br>
+                                Além disso, a equipe da LB Tour se mostrou sempre disponível para ajudar, tirar dúvidas e resolver qualquer necessidade que surgisse ao longo do percurso. Fiquei satisfeita e confiante em todo o processo.<br>
+                                Recomendo a LB Tour para quem busca um serviço de qualidade, confiança e excelente atendimento. Certamente viajaria novamente com a empresa"</p>
+                                <div class="testimonial-card__user">
+                                    <img src="./images/mulher-4.jpg" alt="Foto do cliente" class="testimonial-card__avatar">
+                                    <div class="testimonial-card__user-info">
+                                        <strong>Angelina Santos </strong>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Card 2 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-card__rating">
+                                    <img src="./images/starIcon.svg" alt="Ícone de estrela">
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-card__text">"Boa tarde acabei de fechar um lugar top, com Clodoaldo da LB Tour agência, colaborador muito educado e prestativo, desde o primeiro atendimento até o momento de fechar, sempre disposta a me auxiliar em fechar o melhor lugar para passar meu aniversário com minha filha.<br>
+                                Parabéns Clodoaldo por me auxiliar e ser atencioso e paciente em me explicar tudo....agora é aguardar para ter dias de tranquilidade."</p>
+                                <div class="testimonial-card__user">
+                                    <img src="./images/homem-2.png" alt="Foto do cliente" class="testimonial-card__avatar">
+                                    <div class="testimonial-card__user-info">
+                                        <strong>Carlos Pontes Catanni</strong>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Card 3 -->
+                            <article class="testimonial-card">
+                                <div class="testimonial-card__rating">
+                                    <img src="./images/starIcon.svg" alt="Ícone de estrela">
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-card__text">"Vendedor João muito atencioso, responde rápido, me deu várias dicas. Estou muito satisfeita com o atendimento esperando ansiosamente o dia da viagem.<br>
+                                Somos de Uberlândia, fica até próximo no meu ponto de vista e espero gostar da experiência para retornar com as crianças mais vezes!"</p>
+                                <div class="testimonial-card__user">
+                                    <img src="./images/mulher-3.png" alt="Foto do cliente" class="testimonial-card__avatar">
+                                    <div class="testimonial-card__user-info">
+                                        <strong>Juliana Costa da Silva</strong>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Card 4 (Duplicado) -->
+                             <article class="testimonial-card">
+                                <div class="testimonial-card__rating">
+                                    <img src="./images/starIcon.svg" alt="Ícone de estrela">
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-card__text">"Quero agradecer à vendedora Márcia pelo excelente atendimento na compra dos pacotes pela LB Tour. Fui muito bem atendido, com atenção, paciência e profissionalismo. Parabéns pelo ótimo trabalho e pela dedicação em garantir uma experiência tão positiva!
+                                <br>Obrigado Marcia Deus abençoe!"</p>
+                                <div class="testimonial-card__user">
+                                    <img src="./images/mulher-2.png" alt="Foto do cliente" class="testimonial-card__avatar">
+                                    <div class="testimonial-card__user-info">
+                                        <strong>Rosângela Souza Silvestre</strong>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Card 5 (Duplicado) -->
+                             <article class="testimonial-card">
+                                <div class="testimonial-card__rating">
+                                    <img src="./images/starIcon.svg" alt="Ícone de estrela">
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-card__text">"Agradecimento em especial para Atendimento espetacular Ligia LB TOUR
+                                <br>Indico recomendo e não troco... hj já é minha 04 viagem com ela e já estamos pensando na próxima"</p>
+                                <div class="testimonial-card__user">
+                                    <img src="./images/homem-1.jpg" alt="Foto do cliente" class="testimonial-card__avatar">
+                                    <div class="testimonial-card__user-info">
+                                        <strong>Fernando Limeira Machado</strong>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Card 6 (Duplicado) -->
+                             <article class="testimonial-card">
+                                <div class="testimonial-card__rating">
+                                    <img src="./images/starIcon.svg" alt="Ícone de estrela">
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-card__text">"Agência super segura , meu atendimento foi com a Livia , me explicou e esclareceu todas minhas dúvidas , com paciência e respeito e educação ,por todo o tempo que precisei até fechar o pacote , muito simpática , indico a empresa de olhos fechados."</p>
+                                <div class="testimonial-card__user">
+                                    <img src="./images/mulher-1.jpg" alt="Foto do cliente" class="testimonial-card__avatar">
+                                    <div class="testimonial-card__user-info">
+                                        <strong>Beatriz Martins Machado</strong>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <button class="btn--next" aria-label="Próximo depoimento">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="parks" class="parks">
+            <div class="container parks__container">
+                <div class="section-header">
+                    <h2>Parques Imperdíveis</h2>
+                    <p>Mergulhe na diversão dos melhores parques aquáticos da América Latina.</p>
+                </div>
+
+                <div class="parks__card-list">
+                    <!-- Card 1: Thermas dos Laranjais -->
+                    <article class="park-card">
+                        <div class="park-card__image-wrapper">
+                            <img src="./images/thermas-olp.webp" alt="Thermas dos Laranjais" class="park-card__image">
+                        </div>
+                        <div class="park-card__content">
+                            <h3 class="park-card__title">Thermas dos Laranjais</h3>
+                            <p class="park-card__description">O maior parque aquático da América Latina com mais de 50 atrações para toda família.</p>
+                            <ul class="park-card__info-list">
+                                <li class="park-card__info-item">
+                                    <svg class="park-card__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <span>Aberto das 9h às 18h</span>
+                                </li>
+                                <li class="park-card__info-item">
+                                    <svg class="park-card__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                    <span>Para toda família</span>
+                                </li>
+                                <li class="park-card__info-item">
+                                    <svg class="park-card__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5-2.5-2-4.5-2-4.5s-1.5 2-2 4.5c-.5 2.5-2 4.9-4 6.5-2 1.6-3 3.5-3 5.5a7 7 0 0 0 7 7z"></path></svg>
+                                    <span>Águas termais naturais</span>
+                                </li>
+                            </ul>
+                            <a href="" class="btn btn--details">Ver Mais Detalhes</a>
+                            <span>O parque aquático mais visitado da América Latina e o 3º mais visitados do Mundo.<br>
+                            O Thermas dos Laranjais é referência internacional em lazer, oferecendo atrações para todas as idades, com piscinas de águas termais naturais, toboáguas radicais, áreas infantis e espaços de descanso.<br>
+                            Um complexo completo de águas termais, ideal para famílias que buscam diversão, conforto e experiências inesquecíveis em um dos principais destinos turísticos do Brasil.</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Hot Beach Olímpia (Imagem à esquerda) -->
+                    <article class="park-card">
+                        <div class="park-card__image-wrapper">
+                            <img src="./images/hot-beach-parque.webp" alt="Hot Beach Olímpia" class="park-card__image">
+                        </div>
+                        <div class="park-card__content">
+                            <h3 class="park-card__title">Hot Beach Olímpia</h3>
+                            <p class="park-card__description">Praia artificial com ondas e estrutura completa de resort. Experiência única no interior.</p>
+                            <ul class="park-card__info-list">
+                                <li class="park-card__info-item">
+                                    <svg class="park-card__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <span>Aberto das 10h às 20h</span>
+                                </li>
+                                <li class="park-card__info-item">
+                                    <svg class="park-card__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                    <span>Ideal para casais</span>
+                                </li>
+                                <li class="park-card__info-item">
+                                    <svg class="park-card__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5-2.5-2-4.5-2-4.5s-1.5 2-2 4.5c-.5 2.5-2 4.9-4 6.5-2 1.6-3 3.5-3 5.5a7 7 0 0 0 7 7z"></path></svg>
+                                    <span>Piscinas relaxantes</span>
+                                </li>
+                            </ul>
+                            <a href="#booking" class="btn btn--details">Ver Mais Detalhes</a>
+                            <span>Um parque aquático moderno, elegante e pensado para quem valoriza conforto.<br>
+                            O Hot Beach Olímpia combina águas termais, atrações para adultos e crianças e um ambiente organizado e acolhedor, proporcionando diversão com mais tranquilidade, comodidade e menos filas.<br>
+                            A escolha ideal para quem quer aproveitar o melhor de Olímpia com uma experiência mais confortável e sofisticada.</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+                    <style>
+                    /* Estilo para arredondar o container da imagem */
+                    .package-card__image-wrapper {
+                        width: 100%;
+                        border-radius: 20px; /* Ajuste o tamanho do arredondamento aqui */
+                        overflow: hidden;    /* Isso "corta" a imagem no formato do wrapper */
+                        display: flex;       /* Garante que não haja espaços vazios */
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Opcional: uma sombra leve */
+                    }
+
+                    /* Ajuste da imagem para preencher o espaço */
+                    .package-card__image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;   /* Garante que a imagem cubra o espaço sem distorcer */
+                        display: block;
+                    }
+
+                    /* Apenas para organização visual do exemplo */
+                    .package-card {
+                        max-width: 350px;    /* Largura de exemplo do card */
+                        margin: 90px auto;
+                    }
+                </style>
+
+                    <section id="packages" class="category-card">
+                        <div class="container packages__container">
+                            <div class="section-header">
+                                <h2>Pacotes imperdíveis</h2>
+                                <p>Os melhores pacotes para toda família!!</p>
+                            </div>
+                            <div class="packages__card-list">
+                                <article class="package-card">
+                                    <div class="package-card__image-wrapper">
+                                        <img src="./images/pacote-familia.jpeg" alt="Pacotes" class="package-card__image">
+                                    </div>
+                                    </article>
+                            </div>
+                        </div>
+                    </section>
+
+                        <section id="contact" class="connect">
+                        <div class="container">
+                        <div class="connect-card">
+                        <!-- Left Side: Newsletter -->
+                        <div class="connect-card__newsletter">
+                        <h3 class="connect-card__title">✉️ Promoções exclusivas</h3>
+                        <p class="connect-card__text">
+                        Existe um jeito mais inteligente de viajar para Olímpia.
+                        Quem está na nossa lista recebe ofertas antecipadas, condições diferenciadas e oportunidades que não aparecem nos anúncios.
+
+                        👉 CADASTRE SE</p>
+                        <div class="newsletter-form">                        
+                        <form action="gerencia@lbtour.com.br" method="POST" class="newsletter-form">
+                            <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+                            <button type="submit">Cadastrar</button>
+                        </form>
+                        </div>
+                        </div>
+
+                        <!-- Right Side: Contact -->
+                        <div class="connect-card__contact">
+                        <h3 class="connect-card__title">Fale Conosco</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <img src="./images/phoneIcon.svg" alt="Ícone de telefone" class="contact-method__icon">
+                                <div class="contact-method__info">
+                                    <span class="contact-method__title">Atendimento Humano</span>
+                                    <strong class="contact-method__detail">(17) 3281-1500</strong>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/551732811500?text=Olá, vim pelo site (https://lbtour.com.br/) e gostaria de obter informações para a minha próxima viagem." class="contact-method contact-method--whatsapp">
+                                <img src="./images/whatsapp.svg" alt="Ícone do WhatsApp" class="contact-method__icon">
+                                <div class="contact-method__info">
+                                    <span class="contact-method__title">WhatsApp</span>
+                                    <strong class="contact-method__detail">Mande uma mensagem</strong>
+                                </div>
+                            </a>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+            </section>
+
+                        <article id="about" class="about">
+                        <div class="about-container">
+                            
+                            <section id="about" class="about-section">
+                            <div class="about-container">
+                            <div class="about-col">
+                            <div class="carousel-container">
+                            <div class="carousel-slide">
+                            <img src="./images/sobre-1.jpeg" alt="Equipe LB Tour 1" class="about-img">
+                            <img src="./images/sobre-2.jpeg" alt="Equipe LB Tour 2" class="about-img">
+                            </div>
+                
+                            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                            </div>
+                            <p class="caption">Arraste para o lado para ver mais</p>
+                            </div>
+            </section>
+
+                                <div class="about-text-box">
+                                <h2 class="about-title">Sobre a LB Tour</h2>
+                                
+                                <p class="about-p">
+                                    A LB Tour é especialista em viagens para Olímpia, com foco absoluto nos melhores resorts e parques aquáticos do destino.
+                                </p>
+
+                                <p class="about-p">
+                                    Com 5 anos de atuação no mercado, ajudamos famílias a viverem experiências tranquilas, seguras e bem planejadas, cuidando de cada detalhe, da escolha do hotel ao suporte completo antes, durante e depois da viagem. Nosso atendimento é próximo, personalizado e orientado a encontrar a melhor opção para o seu perfil.
+                                </p>
+
+                                <p class="about-p destaque">
+                                    Aqui, você viaja com quem conhece Olímpia, entende o destino e entrega segurança em cada decisão.
+                                </p>
+                                </div>
+            </section>
+                            <div class="about__features">
+                            <div class="feature-item">
+                            <img src="./images/starIcon.svg" alt="Ícone de estrela">
+                            <span>Melhores Preços Garantidos</span>
+                            </div>
+                            <div class="feature-item">
+                            <img src="./images/users.svg" alt="Ícone de usuários">
+                            <span>Agência de Confiança</span>
+                            </div>
+                            <div class="feature-item">
+                            <img src="./images/phoneicon.svg" alt="Ícone de suporte">
+                            <span>Suporte Personalizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+                    <footer class="footer">
+                    <div class="container footer__container">
+                    <div class="footer__grid">
+                    <div class="footer__col footer__col--about">
+                    <img src="./images/logo-footer(2).png" alt="LB Tour Logo">
+                    <p>Realizando sonhos de viagem há mais de XX anos. Sua experiência perfeita é nossa prioridade.</p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/share/1U4pbSL6AK/" class="social-icon-wrapper"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/lbtour?igsh=MWl0eXJ4eG85MGtj" class="social-icon-wrapper"><img src="images/instagram.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="footer__col footer__col--contact">
+                    <h4>Contato</h4>
+                    <div class="contact-item">
+                        <img src="./images/phoneicon.svg" alt="Telefone">
+                        <span>(17) 3281-1500 - Central de Vendas</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/email-svgrepo-com.svg" alt="Email">
+                        <span>gerencia@lbtour.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/localIcon.svg" alt="Localização">
+                        <span>Av. Dr. Andrade e Silva, 994 - Centro, Olímpia - SP,<br>CEP: 15400-106</span>
+                    </div>
+                </div>
+                <div class="footer__col footer__col--hours">
+                    <h4>Horário de Atendimento</h4>
+                    <div class="contact-item">
+                        <img src="./images/clock.svg" alt="Horário">
+                        <span>Segunda a Sexta: 08:30h às 20h</span>
+                    </div>
+                    <a href="https://wa.me/551732811500?text=Olá, vim pelo site (https://lbtour.com.br/) e gostaria de obter informações para a minha próxima viagem." target="_blank" class="btn btn--whatsapp-footer">
+                        <img src="./images/whatsapp.svg" alt="WhatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 LB Tour Viagens. Todos os direitos reservados.</p>
+                <p>CNPJ: 42.552.714/0001-52</p>
+                <div class="footer__legal">
+                    <a href="#">Termos de Uso </a>
+                    <a href="#">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+                <script src="script.js" defer></script>
+
+        <a href="https://wa.me/551732811500?text=Olá, vim pelo site (https://lbtour.com.br/) e gostaria de obter informações para a minha próxima viagem." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn">
+        <img src="./images/whatsapp.svg" alt="WhatsApp">
+        <span>Fale Conosco</span>
+    </a>
+</body>
+</html>
